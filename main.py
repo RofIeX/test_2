@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
       self.qp.end()
 
   def draw(self):
-    color = QColor(255, 255, 0)
+    color = QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
     size = random.choice(range(10, 300))
 
     self.qp.setBrush(color)
